@@ -159,7 +159,6 @@ function fetchAutocomplete(query) {
         .catch(error => console.error('Error fetching autocomplete suggestions:', error));
 }
 
-// Функция для обновления списка предложений
 function updateSuggestionsList(suggestions) {
     let suggestionsList = document.querySelector('.suggestions');
     suggestionsList.innerHTML = '';
@@ -172,7 +171,7 @@ function updateSuggestionsList(suggestions) {
             let searchField = document.querySelector('.search-field');
             searchField.value = suggestion;
             suggestionsList.style.display = 'none';
-            downloadData(1, suggestion); // Инициируем поиск с выбранным значением
+            downloadData(1, suggestion);
         });
         suggestionsList.appendChild(li);
     });
