@@ -145,38 +145,36 @@ body {
     color: black;
 }
 
-/* Стили для поля поиска и кнопки поиска */
 .search-form {
     position: relative;
-    margin-bottom: 20px; /* Добавлен отступ снизу */
+    margin-bottom: 20px; 
 }
 
-/* Стили для выпадающего списка с предложениями */
 .suggestions {
     position: absolute;
-    z-index: 1000; /* Чтобы список был поверх других элементов */
-    width: calc(100% - 20px); /* Уменьшенная ширина списка, если необходимо */
-    background: #fff; /* Фоновый цвет списка */
-    border: 1px solid #ddd; /* Граница списка */
-    border-top: none; /* Убрать верхнюю границу, чтобы сливалось с полем ввода */
-    box-shadow: 0px 4px 5px rgba(0,0,0,0.2); /* Тень для списка */
-    list-style: none; /* Убрать маркеры списка */
+    z-index: 1000; 
+    width: calc(100% - 20px); 
+    background: #fff; 
+    border: 1px solid #ddd; 
+    border-top: none;
+    box-shadow: 0px 4px 5px rgba(0,0,0,0.2);
+    list-style: none;
     margin: 0;
     padding: 0;
-    max-height: 200px; /* Максимальная высота списка */
-    overflow-y: auto; /* Прокрутка, если элементов больше, чем влезает в max-height */
-    top: 100%; /* Смещение списка вниз от верхнего края поля ввода */
-    left: 0; /* Выравнивание списка по левому краю поля ввода */
+    max-height: 200px;
+    overflow-y: auto;
+    top: 100%;
+    left: 0;
 }
 
 .suggestions li {
-    padding: 10px; /* Внутренние отступы для каждого элемента списка */
-    cursor: pointer; /* Курсор в виде указателя */
-    border-bottom: 1px solid #ddd; /* Граница между элементами списка */
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
 }
 
 .suggestions li:hover {
-    background-color: #f0f0f0; /* Цвет фона при наведении */
+    background-color: #f0f0f0;
 }
 
   
